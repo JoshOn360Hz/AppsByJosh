@@ -22,7 +22,7 @@ const appData = {
    tailtag: {
     icon: 'img/tailtag.png',
     title: 'TailTag',
-    description: 'TailTag is the ultimate plane spotting companion. Log aircraft sightings, tag them by registration, airline, or flight, and upload photos to create your personal aviation archive. With CloudKit sync and a sleek SwiftUI interface, TailTag makes it easy to organize and relive your aviation moments.',
+    description: 'TailTag is the ultimate plane spotting companion. Log aircraft sightings, tag them by registration, airline, or flight, and upload photos to create your personal aviation archive. With a sleek SwiftUI interface, TailTag makes it easy to organize and relive your aviation moments.',
     screenshots: [
         'img/tailtag/sc1.png',
         'img/tailtag/sc2.png',
