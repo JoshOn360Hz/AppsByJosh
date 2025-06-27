@@ -33,7 +33,7 @@ const appData = {
 },
 pinboard: {
     icon: 'img/pinboard.png',
-    title: 'PinBoard',
+    title: 'PinBoard - Better Notes',
     description: 'PinBoard is a modern sticky note utility for iOS that keeps your thoughts front and center. Create colorful, resizable notes with custom icons, fonts, and themes. Stay organized with Live Activities, widgets, and seamless syncing — all wrapped in a polished SwiftUI interface.',
     screenshots: [
         'img/pinboard/sc1.png',
