@@ -51,45 +51,22 @@
 
     <noscript>
         <div style="
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.95);
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
             color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            z-index: 10000;
+            padding: 12px 20px;
             font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 70px;
+            left: 0;
+            z-index: 999;
         ">
-            <div style="
-                max-width: 500px;
-                padding: 40px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                border-radius: 20px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            ">
-                <h2 style="
-                    margin: 0 0 20px 0;
-                    font-size: 24px;
-                    font-weight: 600;
-                ">JavaScript Required</h2>
-                <p style="
-                    margin: 0 0 20px 0;
-                    font-size: 16px;
-                    line-height: 1.5;
-                    opacity: 0.9;
-                ">This website requires JavaScript to function properly. Please enable JavaScript in your browser settings to experience all features.</p>
-                <p style="
-                    margin: 0;
-                    font-size: 14px;
-                    opacity: 0.7;
-                ">Most modern browsers have JavaScript enabled by default.</p>
-            </div>
+            <i class="bi bi-exclamation-triangle-fill" style="margin-right: 8px;"></i>
+            JavaScript is required for this website to function properly. Please enable it in your browser settings.
         </div>
     </noscript>
 
