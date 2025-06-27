@@ -46,6 +46,35 @@ pinboard: {
 
 };
 
+const preloadedImages = new Map();
+
+function preloadScreenshots() {
+    const allScreenshots = [];
+    
+
+    Object.values(appData).forEach(app => {
+        allScreenshots.push(...app.screenshots);
+        allScreenshots.push(app.icon);
+    });
+    
+    allScreenshots.forEach(src => {
+        const img = new Image();
+        img.onload = () => {
+            preloadedImages.set(src, img);
+        };
+        img.onerror = () => {
+            console.warn(`Failed to preload image: ${src}`);
+        };
+        img.src = src;
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', preloadScreenshots);
+} else {
+    preloadScreenshots();
+}
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
@@ -118,18 +147,36 @@ function openModal(appType) {
         const screenshot = app.screenshots[1];
         const screenshotDiv = document.createElement('div');
         screenshotDiv.className = 'screenshot-item';
-        screenshotDiv.innerHTML = `
-            <img src="${screenshot}" alt="${app.title} Screenshot" class="screenshot-img">
-        `;
+        
+        const preloadedImg = preloadedImages.get(screenshot);
+        if (preloadedImg) {
+            const clonedImg = preloadedImg.cloneNode();
+            clonedImg.alt = `${app.title} Screenshot`;
+            clonedImg.className = 'screenshot-img';
+            screenshotDiv.appendChild(clonedImg);
+        } else {
+            screenshotDiv.innerHTML = `
+                <img src="${screenshot}" alt="${app.title} Screenshot" class="screenshot-img">
+            `;
+        }
         
         screenshotsContainer.appendChild(screenshotDiv);
     } else {
         app.screenshots.forEach((screenshot, index) => {
             const screenshotDiv = document.createElement('div');
             screenshotDiv.className = 'screenshot-item';
-            screenshotDiv.innerHTML = `
-                <img src="${screenshot}" alt="${app.title} Screenshot ${index + 1}" class="screenshot-img">
-            `;
+            
+            const preloadedImg = preloadedImages.get(screenshot);
+            if (preloadedImg) {
+                const clonedImg = preloadedImg.cloneNode();
+                clonedImg.alt = `${app.title} Screenshot ${index + 1}`;
+                clonedImg.className = 'screenshot-img';
+                screenshotDiv.appendChild(clonedImg);
+            } else {
+                screenshotDiv.innerHTML = `
+                    <img src="${screenshot}" alt="${app.title} Screenshot ${index + 1}" class="screenshot-img">
+                `;
+            }
             
             screenshotsContainer.appendChild(screenshotDiv);
         });
@@ -337,17 +384,36 @@ window.addEventListener('resize', () => {
                     const screenshot = app.screenshots[1];
                     const screenshotDiv = document.createElement('div');
                     screenshotDiv.className = 'screenshot-item';
-                    screenshotDiv.innerHTML = `
-                        <img src="${screenshot}" alt="${app.title} Screenshot" class="screenshot-img">
-                    `;
+                    
+                    const preloadedImg = preloadedImages.get(screenshot);
+                    if (preloadedImg) {
+                        const clonedImg = preloadedImg.cloneNode();
+                        clonedImg.alt = `${app.title} Screenshot`;
+                        clonedImg.className = 'screenshot-img';
+                        screenshotDiv.appendChild(clonedImg);
+                    } else {
+                        screenshotDiv.innerHTML = `
+                            <img src="${screenshot}" alt="${app.title} Screenshot" class="screenshot-img">
+                        `;
+                    }
                     screenshotsContainer.appendChild(screenshotDiv);
                 } else {
                     app.screenshots.forEach((screenshot, index) => {
                         const screenshotDiv = document.createElement('div');
                         screenshotDiv.className = 'screenshot-item';
-                        screenshotDiv.innerHTML = `
-                            <img src="${screenshot}" alt="${app.title} Screenshot ${index + 1}" class="screenshot-img">
-                        `;
+                        
+                        const preloadedImg = preloadedImages.get(screenshot);
+                        if (preloadedImg) {
+                            const clonedImg = preloadedImg.cloneNode();
+                            clonedImg.alt = `${app.title} Screenshot ${index + 1}`;
+                            clonedImg.className = 'screenshot-img';
+                            screenshotDiv.appendChild(clonedImg);
+                        } else {
+                            screenshotDiv.innerHTML = `
+                                <img src="${screenshot}" alt="${app.title} Screenshot ${index + 1}" class="screenshot-img">
+                            `;
+                        }
+                        
                         screenshotsContainer.appendChild(screenshotDiv);
                     });
                 }
