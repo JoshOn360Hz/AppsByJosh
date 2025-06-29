@@ -16,7 +16,8 @@ const appData = {
         'img/cumulus/sc3.png'
     ],
     appStoreUrl: 'https://apps.apple.com/us/app/cumulus/id6742735497',
-    testFlightUrl: 'https://testflight.apple.com/join/3FTY37Fg'
+    testFlightUrl: 'https://testflight.apple.com/join/3FTY37Fg',
+    detailPageUrl: 'cumulus.html'
 },
 
    tailtag: {
@@ -29,7 +30,8 @@ const appData = {
         'img/tailtag/sc3.png'
     ],
     appStoreUrl: 'https://apps.apple.com/us/app/tailtag/id6747738157',
-    testFlightUrl: 'https://testflight.apple.com/join/zXMv5qHd'
+    testFlightUrl: 'https://testflight.apple.com/join/zXMv5qHd',
+    detailPageUrl: 'tailtag.html'
 },
 pinboard: {
     icon: 'img/pinboard.png',
@@ -41,7 +43,8 @@ pinboard: {
         'img/pinboard/sc3.png'
     ],
     appStoreUrl: 'https://apps.apple.com/us/app/pinboard-better-notes/id6747376814',
-    testFlightUrl: 'https://testflight.apple.com/join/NmpwygSt'
+    testFlightUrl: 'https://testflight.apple.com/join/NmpwygSt',
+    detailPageUrl: 'pinboard.html'
 }
 
 };
@@ -193,6 +196,13 @@ function openModal(appType) {
     if (betaButton) {
         betaButton.onclick = () => {
             window.open(app.testFlightUrl, '_blank');
+        };
+    }
+
+    const learnMoreButton = document.querySelector('.learn-more-button');
+    if (learnMoreButton) {
+        learnMoreButton.onclick = () => {
+            window.location.href = app.detailPageUrl;
         };
     }
 

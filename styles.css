@@ -84,6 +84,18 @@ body {
     width: 100%;
 }
 
+.nav-link[href="index.html"] {
+    background: rgba(102, 126, 234, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.nav-link[href="index.html"]:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: translateY(-1px);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -517,7 +529,7 @@ body {
     justify-content: center;
 }
 
-.download-button, .beta-button {
+.download-button, .beta-button, .learn-more-button {
     padding: 1rem 2rem;
     border-radius: 25px;
     font-weight: 500;
@@ -537,12 +549,23 @@ body {
     border: 2px solid #ff6b35;
 }
 
-.download-button:hover, .beta-button:hover {
+.learn-more-button {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.download-button:hover, .beta-button:hover, .learn-more-button:hover {
     transform: translateY(-2px);
 }
 
 .beta-button:hover {
     background: #ff6b35;
+    color: white;
+}
+
+.learn-more-button:hover {
+    background: #667eea;
     color: white;
 }
 
@@ -759,6 +782,10 @@ body {
         gap: 1rem;
     }
     
+    .download-button, .beta-button, .learn-more-button {
+        width: 100%;
+    }
+    
     .modal-screenshots {
         display: flex;
         justify-content: center;
@@ -870,5 +897,195 @@ body {
     
     .hero-title {
         font-size: 4.5rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .navbar {
+        background: rgba(26, 26, 26, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-logo h1 {
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .nav-link {
+        color: #e0e0e0;
+    }
+
+    .nav-link:hover {
+        color: #7c3aed;
+    }
+
+    .nav-link::after {
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    }
+
+    .nav-link[href="index.html"] {
+        background: rgba(124, 58, 237, 0.1);
+    }
+
+    .nav-link[href="index.html"]:hover {
+        background: rgba(124, 58, 237, 0.2);
+    }
+
+    .hamburger span {
+        background: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+        .nav-menu {
+            background: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link:hover {
+            background: rgba(124, 58, 237, 0.1);
+        }
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+        color: #e0e0e0;
+    }
+
+    .hero-subtitle {
+        color: #b0b0b0;
+    }
+
+
+
+    .apps-section {
+        background: #1a1a1a;
+    }
+
+    .section-header h2 {
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .section-header p {
+        color: #b0b0b0;
+    }
+
+    .app-card {
+        background: #2a2a2a;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .app-card:hover {
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .app-card h3 {
+        color: #e0e0e0;
+    }
+
+    .app-card p {
+        color: #b0b0b0;
+    }
+
+    .feature-tag {
+        background: rgba(124, 58, 237, 0.2);
+        color: #a855f7;
+    }
+
+    .app-button {
+        color: #7c3aed;
+        border-color: #7c3aed;
+    }
+
+    .app-button:hover {
+        background: #7c3aed;
+        color: white;
+    }
+
+    .modal-overlay {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+        background: #2a2a2a;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-close {
+        color: #b0b0b0;
+    }
+
+    .modal-close:hover {
+        color: #e0e0e0;
+    }
+
+    .modal-title {
+        color: #e0e0e0;
+    }
+
+    .modal-description {
+        color: #b0b0b0;
+    }
+
+    .screenshot-item {
+        background: rgba(0, 0, 0, 0);
+    }
+
+  
+
+    .screenshot-placeholder {
+        background: #1e1e1e;
+        color: #b0b0b0;
+    }
+
+    .download-button {
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    }
+
+    .beta-button {
+        color: #f97316;
+        border-color: #f97316;
+    }
+
+    .beta-button:hover {
+        background: #f97316;
+    }
+
+    .learn-more-button {
+        color: #7c3aed;
+        border-color: #7c3aed;
+    }
+
+    .learn-more-button:hover {
+        background: #7c3aed;
+    }
+
+    .contact-section {
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    }
+
+    .contact-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-item:hover {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .footer {
+        background: #1e1e1e;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
