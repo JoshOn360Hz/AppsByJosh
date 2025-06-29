@@ -529,7 +529,7 @@ body {
     justify-content: center;
 }
 
-.download-button, .beta-button, .learn-more-button {
+.download-button, .beta-button {
     padding: 1rem 2rem;
     border-radius: 25px;
     font-weight: 500;
@@ -549,23 +549,12 @@ body {
     border: 2px solid #ff6b35;
 }
 
-.learn-more-button {
-    background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
-}
-
-.download-button:hover, .beta-button:hover, .learn-more-button:hover {
+.download-button:hover, .beta-button:hover {
     transform: translateY(-2px);
 }
 
 .beta-button:hover {
     background: #ff6b35;
-    color: white;
-}
-
-.learn-more-button:hover {
-    background: #667eea;
     color: white;
 }
 
@@ -782,7 +771,7 @@ body {
         gap: 1rem;
     }
     
-    .download-button, .beta-button, .learn-more-button {
+    .download-button, .beta-button {
         width: 100%;
     }
     
@@ -1059,15 +1048,6 @@ body {
 
     .beta-button:hover {
         background: #f97316;
-    }
-
-    .learn-more-button {
-        color: #7c3aed;
-        border-color: #7c3aed;
-    }
-
-    .learn-more-button:hover {
-        background: #7c3aed;
     }
 
     .contact-section {
