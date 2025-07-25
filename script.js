@@ -45,6 +45,20 @@ pinboard: {
     appStoreUrl: 'https://apps.apple.com/us/app/pinboard-better-notes/id6747376814',
     testFlightUrl: 'https://testflight.apple.com/join/NmpwygSt',
     detailPageUrl: 'pinboard.html'
+},
+
+flipcards: {
+    icon: 'img/flipcards.png',
+    title: 'FlipCards',
+    description: 'FlipCards is your ultimate flashcard study companion, designed to revolutionize the way you learn and retain information. Create custom study sets, organize them by subject, and master any topic with interactive flashcards that adapt to your learning pace.',
+    screenshots: [
+        'img/flipcards/sc1.png',
+        'img/flipcards/sc2.png',
+        'img/flipcards/sc3.png'
+    ],
+    appStoreUrl: '#',
+    testFlightUrl: 'https://testflight.apple.com/join/2hBxWMNR', // Will be updated when beta is available
+
 }
 
 };
