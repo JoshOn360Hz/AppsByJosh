@@ -62,7 +62,7 @@ flipcards: {
 pulse: {
     icon: 'img/pulse.png',
     title: 'Pulse',
-    description: 'Pulse is a diagnostics app designed to help verify the core functionality of your iPhone.',
+    description: 'Pulse is a diagnostics app designed to help verify the core functionality of your iPhone,from buttons to sensors. Built with SwiftUI and with no data collection.',
     screenshots: [
         'img/pulse/sc1.png',
         'img/pulse/sc2.png',
