@@ -56,8 +56,20 @@ flipcards: {
         'img/flipcards/sc2.png',
         'img/flipcards/sc3.png'
     ],
+    appStoreUrl: 'https://apps.apple.com/gb/app/flipcards-revision-made-easy/id6749154468',
+    testFlightUrl: 'https://testflight.apple.com/join/2hBxWMNR',
+},
+pulse: {
+    icon: 'img/pulse.png',
+    title: 'Pulse',
+    description: 'Pulse is a diagnostics app designed to help verify the core functionality of your iPhone.',
+    screenshots: [
+        'img/pulse/sc1.png',
+        'img/pulse/sc2.png',
+        'img/pulse/sc3.png'
+    ],
     appStoreUrl: '#',
-    testFlightUrl: 'https://testflight.apple.com/join/2hBxWMNR', // Will be updated when beta is available
+    testFlightUrl: '#', // Will be updated when beta is available
 
 }
 
