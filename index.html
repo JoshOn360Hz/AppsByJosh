@@ -37,8 +37,6 @@
 <link rel="preload" as="image" href="img/pulse/sc3.png">
 </head>
 <body>
-
-
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -79,126 +77,144 @@
     </noscript>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="line">Amazing Apps.</span>
-                <span class="line">Beautifully Crafted.</span>
-            </h1>
-            <p class="hero-subtitle">Experience the perfect blend of design and functionality with apps that transform the way you work and play.</p>
-            <button class="cta-button">Explore Apps</button>
-        </div>
-        <div class="hero-visual">
-            <div class="floating-card card-1"></div>
-            <div class="floating-card card-2"></div>
-            <div class="floating-card card-3"></div>
+        <div class="container hero-layout">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Independent iOS Developer</p>
+                <h1 class="hero-title">Beautiful native apps made to feel right at home on Apple platforms.</h1>
+                <p class="hero-subtitle">From weather to aviation and productivity, each app is crafted with SwiftUI, polished details, and refined interactions.</p>
+                <div class="hero-actions">
+                    <button class="cta-button">Explore Apps</button>
+                    <a href="#contact" class="secondary-button">Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">6</span>
+                        <span class="stat-label">Apps</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">4+</span>
+                        <span class="stat-label">Platforms</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">SwiftUI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-device">
+                    <img src="img/cumulus/sc1.png" alt="Cumulus app preview" class="hero-device-img">
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="apps" class="apps-section">
-        <div class="section-header">
-            <h2>Featured Apps</h2>
-            <p>Discover exceptional applications designed to enhance your digital experience</p>
-        </div>
-        
-        <div class="apps-grid">
-            <div class="app-card" data-app="cumulus">
-                <div class="app-icon">
-                    <img src="img/cumulus.png" alt="Cumulus App Icon" class="app-icon-img">
-                </div>
-                <h3>Cumulus</h3>
-                <p>Your personal weather companion for all Apple platforms. Track real-time forecasts with stunning visuals, dynamic widgets, and intelligent insights to plan your day perfectly.</p>
-                <div class="app-features">
-                    <span class="feature-tag">SwiftUI</span>
-                    <span class="feature-tag">WeatherKit</span>
-                    <span class="feature-tag">iOS</span>
-                       <span class="feature-tag">iPadOS</span>
-                    <span class="feature-tag">WatchOS</span>
-                    <span class="feature-tag">MacOS</span>
-                </div>
-                <button class="app-button">Learn More</button>
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Apps</h2>
+                <p>Clean design, powerful features, and native performance across your favorite Apple devices.</p>
             </div>
-
-            <div class="app-card" data-app="tailtag">
-                <div class="app-icon">
-                    <img src="img/tailtag.png" alt="TailTag App Icon" class="app-icon-img">
+            
+            <div class="apps-grid">
+                <div class="app-card" data-app="cumulus">
+                    <div class="app-icon">
+                        <img src="img/cumulus.png" alt="Cumulus App Icon" class="app-icon-img">
+                    </div>
+                    <h3>Cumulus</h3>
+                    <p>Your personal weather companion for all Apple platforms. Track real-time forecasts with stunning visuals, dynamic widgets, and intelligent insights to plan your day perfectly.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SwiftUI</span>
+                        <span class="feature-tag">WeatherKit</span>
+                        <span class="feature-tag">iOS</span>
+                        <span class="feature-tag">iPadOS</span>
+                        <span class="feature-tag">WatchOS</span>
+                        <span class="feature-tag">MacOS</span>
+                    </div>
+                    <button class="app-button">Learn More</button>
                 </div>
-                <h3>TailTag</h3>
-                <p>Your personal spotting companion. Capture, tag, and log aircraft with intelligent organization, detailed records, and stunning visuals for every aviation enthusiast.</p>
-                <div class="app-features">
-                    <span class="feature-tag">SwiftUI</span>
-                    <span class="feature-tag">Smart Tagging</span>
-                    <span class="feature-tag">Intuitive Search</span>
-                    <span class="feature-tag">iOS</span>
-                    <span class="feature-tag">iPadOS</span>
-
+    
+                <div class="app-card" data-app="tailtag">
+                    <div class="app-icon">
+                        <img src="img/tailtag.png" alt="TailTag App Icon" class="app-icon-img">
+                    </div>
+                    <h3>TailTag</h3>
+                    <p>Your personal spotting companion. Capture, tag, and log aircraft with intelligent organization, detailed records, and stunning visuals for every aviation enthusiast.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SwiftUI</span>
+                        <span class="feature-tag">Smart Tagging</span>
+                        <span class="feature-tag">Intuitive Search</span>
+                        <span class="feature-tag">iOS</span>
+                        <span class="feature-tag">iPadOS</span>
+    
+                    </div>
+                    <button class="app-button">Learn More</button>
                 </div>
-                <button class="app-button">Learn More</button>
+    
+                <div class="app-card" data-app="pinboard">
+                    <div class="app-icon">
+                        <img src="img/pinboard.png" alt="Pinboard App Icon" class="app-icon-img">
+                    </div>
+                    <h3>Pinboard</h3>
+                    <p>Your personal note companion. Create, pin, and organize colorful notes with ease, using intuitive tools and dynamic widgets to keep your ideas front and center.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SwiftUI</span>
+                        <span class="feature-tag">Live Activities</span>
+                        <span class="feature-tag">Widgets</span>
+                        <span class="feature-tag">iOS</span>
+                        <span class="feature-tag">iPadOS</span>
+    
+                    </div>
+                    <button class="app-button">Learn More</button>
+                </div>
+    
+                <div class="app-card" data-app="flipcards">
+                    <div class="app-icon">
+                        <img src="img/flipcards.png" alt="FlipCards App Icon" class="app-icon-img">
+                    </div>
+                    <h3>FlipCards</h3>
+                    <p>Your ultimate flashcard study companion. Create, organize, and study with interactive flashcards designed to boost your learning efficiency and retention.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SwiftUI</span>
+                        <span class="feature-tag">Study Tools</span>
+                        <span class="feature-tag">Progress Tracking</span>
+                        <span class="feature-tag">iOS</span>
+                        <span class="feature-tag">iPadOS</span>
+                    </div>
+                    <button class="app-button">Learn More</button>
+                </div>
+    
+                <div class="app-card" data-app="pulse">
+                    <div class="app-icon">
+                        <img src="img/pulse.png" alt="Pulse App Icon" class="app-icon-img">
+                    </div>
+                    <h3>Pulse</h3>
+                    <p>Pulse is a diagnostics app designed to help verify the core functionality of your iPhone,from buttons to sensors. Built with SwiftUI and with no data collection.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SwiftUI</span>
+                        <span class="feature-tag">Swift</span>
+                        <span class="feature-tag">iPhone</span>
+                        <span class="feature-tag">Diagnostics</span>
+                    </div>
+                    <button class="app-button">Learn More</button>
+                </div>
+           
+    
+             <div class="app-card" data-app="moments">
+                    <div class="app-icon">
+                        <img src="img/moments.png" alt="Moments App Icon" class="app-icon-img">
+                    </div>
+                    <h3>Moments</h3>
+                    <p>Moments is a simple app designed to use live activites and widgets to count down to what matters to you, built with SwiftUI and optimized for iOS.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SwiftUI</span>
+                        <span class="feature-tag">Swift</span>
+                        <span class="feature-tag">Live Activities</span>
+                        <span class="feature-tag">Widgets</span>
+                    </div>
+                    <button class="app-button">Learn More</button>
+                </div>
             </div>
-
-            <div class="app-card" data-app="pinboard">
-                <div class="app-icon">
-                    <img src="img/pinboard.png" alt="Pinboard App Icon" class="app-icon-img">
-                </div>
-                <h3>Pinboard</h3>
-                <p>Your personal note companion. Create, pin, and organize colorful notes with ease, using intuitive tools and dynamic widgets to keep your ideas front and center.</p>
-                <div class="app-features">
-                      <span class="feature-tag">SwiftUI</span>
-                    <span class="feature-tag">Live Activities</span>
-                    <span class="feature-tag">Widgets</span>
-                    <span class="feature-tag">iOS</span>
-                    <span class="feature-tag">iPadOS</span>
-
-                </div>
-                <button class="app-button">Learn More</button>
-            </div>
-
-            <div class="app-card" data-app="flipcards">
-                <div class="app-icon">
-                    <img src="img/flipcards.png" alt="FlipCards App Icon" class="app-icon-img">
-                </div>
-                <h3>FlipCards</h3>
-                <p>Your ultimate flashcard study companion. Create, organize, and study with interactive flashcards designed to boost your learning efficiency and retention.</p>
-                <div class="app-features">
-                    <span class="feature-tag">SwiftUI</span>
-                    <span class="feature-tag">Study Tools</span>
-                    <span class="feature-tag">Progress Tracking</span>
-                    <span class="feature-tag">iOS</span>
-                    <span class="feature-tag">iPadOS</span>
-                </div>
-                <button class="app-button">Learn More</button>
-            </div>
-
-            <div class="app-card" data-app="pulse">
-                <div class="app-icon">
-                    <img src="img/pulse.png" alt="Pulse App Icon" class="app-icon-img">
-                </div>
-                <h3>Pulse</h3>
-                <p>Pulse is a diagnostics app designed to help verify the core functionality of your iPhone,from buttons to sensors. Built with SwiftUI and with no data collection.</p>
-                <div class="app-features">
-                    <span class="feature-tag">SwiftUI</span>
-                    <span class="feature-tag">Swift</span>
-                    <span class="feature-tag">iPhone</span>
-                    <span class="feature-tag">Diagnostics</span>
-                </div>
-                <button class="app-button">Learn More</button>
-            </div>
-       
-
-         <div class="app-card" data-app="moments">
-                <div class="app-icon">
-                    <img src="img/moments.png" alt="Moments App Icon" class="app-icon-img">
-                </div>
-                <h3>Moments</h3>
-                <p>Moments is a simple app designed to use live activites and widgets to count down to what matters to you, built with SwiftUI and optimized for iOS.</p>
-                <div class="app-features">
-                    <span class="feature-tag">SwiftUI</span>
-                    <span class="feature-tag">Swift</span>
-                    <span class="feature-tag">Live Activities</span>
-                    <span class="feature-tag">Widgets</span>
-                </div>
-                <button class="app-button">Learn More</button>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -224,23 +240,24 @@
     </div>
 
     <section id="contact" class="contact-section">
-        <div class="contact-content">
-            <h2>Let's Create Something Amazing</h2>
-            <p>Have an idea for your next app? Let's bring it to life together.</p>
-            <div class="contact-info">
-                <a href="mailto:info@appsbyjosh.com" class="contact-item contact-button">
-                    <i class="bi bi-envelope contact-icon"></i>
-                    <span>Email</span>
-                </a>
-                <a href="https://www.linkedin.com/in/josh-mansfield-094a051a0/" target="_blank" class="contact-item contact-button">
-                    <i class="bi bi-linkedin contact-icon"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/JoshOn360Hz" target="_blank" class="contact-item contact-button">
-                    <i class="bi bi-github contact-icon"></i>
-                    <span>GitHub</span>
-                </a>
-               
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let’s Build Something Great</h2>
+                <p>Open to app ideas, collaborations, and product work across Apple platforms.</p>
+                <div class="contact-info">
+                    <a href="mailto:info@appsbyjosh.com" class="contact-item contact-button">
+                        <i class="bi bi-envelope contact-icon"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/josh-mansfield-094a051a0/" target="_blank" class="contact-item contact-button">
+                        <i class="bi bi-linkedin contact-icon"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/JoshOn360Hz" target="_blank" class="contact-item contact-button">
+                        <i class="bi bi-github contact-icon"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
