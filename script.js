@@ -68,8 +68,21 @@ pulse: {
         'img/pulse/sc2.png',
         'img/pulse/sc3.png'
     ],
-    appStoreUrl: '#',
-    testFlightUrl: '#', // Will be updated when beta is available
+    appStoreUrl: 'https://apps.apple.com/gb/app/pulse-mobile-diagnostics/id6757356341',
+    testFlightUrl: 'https://apps.apple.com/gb/app/pulse-mobile-diagnostics/id6757356341', 
+
+},
+moments: {
+    icon: 'img/moments.png',
+    title: 'Moments',
+    description: 'Moments is a simple app designed to use live activites and widgets to count down to what matters to you, built with SwiftUI and optimized for iOS.',
+    screenshots: [
+        'img/moments/sc1.png',
+        'img/moments/sc2.png',
+        'img/moments/sc3.png'
+    ],
+    appStoreUrl: 'https://apps.apple.com/gb/app/moments/id6757356342',
+    testFlightUrl: 'https://testflight.apple.com/join/a8gPamuc',
 
 }
 
