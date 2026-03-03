@@ -56,7 +56,7 @@ const appData = {
         title: 'Moments',
         description: 'Moments is a simple app designed to use live activites and widgets to count down to what matters to you, built with SwiftUI and optimized for iOS.',
         screenshots: ['img/moments/sc1.png', 'img/moments/sc2.png', 'img/moments/sc3.png'],
-        appStoreUrl: 'https://apps.apple.com/gb/app/moments/id6757356342',
+        appStoreUrl: 'https://apps.apple.com/gb/app/moments-countdown/id6759080639',
         testFlightUrl: 'https://testflight.apple.com/join/a8gPamuc'
     }
 };
