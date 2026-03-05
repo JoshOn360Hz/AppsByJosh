@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinBoard - Better Notes</title>
+    <meta name="description" content="PinBoard is a modern sticky note utility for iOS that keeps your thoughts front and center. Create colorful, resizable notes with custom icons, fonts, and themes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="shortcut icon" href="/src/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="PinBoard" />
+    <link rel="manifest" href="/src/site.webmanifest" />
+    <style>
+        .app-hero-standalone { padding: 4rem 0; }
+        .policy-card a { color: var(--accent); }
+        .policy-card a:hover { text-decoration: underline; }
+        .footer a { color: var(--muted); transition: color 0.2s ease; }
+        .footer a:hover { color: var(--text); }
+    </style>
+</head>
+<body>
+    <div class="container breadcrumb">
+        <a href="https://appsbyjosh.com" class="breadcrumb-link">
+            <i class="bi bi-chevron-left"></i>
+            AppsByJosh
+        </a>
+    </div>
+
+    <section class="app-hero app-hero-standalone">
+        <div class="container app-hero-layout">
+            <div class="app-hero-content">
+                <div class="app-hero-icon">
+                    <img src="img/pinboard.png" alt="PinBoard App Icon">
+                </div>
+                <h1 class="app-hero-title">PinBoard</h1>
+                <p class="app-hero-tagline">A modern sticky note utility for iOS that keeps your thoughts front and center. Create colorful, resizable notes with custom icons, fonts, and themes — all wrapped in a polished SwiftUI interface.</p>
+                <div class="app-badges">
+                    <span class="app-badge">SwiftUI</span>
+                    <span class="app-badge">Live Activities</span>
+                    <span class="app-badge">Widgets</span>
+                    <span class="app-badge">iOS</span>
+                    <span class="app-badge">iPadOS</span>
+                </div>
+                <div class="app-actions">
+                    <a href="https://apps.apple.com/us/app/pinboard-better-notes/id6747376814" class="app-store-button">
+                        <i class="bi bi-apple"></i>
+                        Download on App Store
+                    </a>
+                    <a href="https://github.com/JoshOn360Hz/PinBoard-App" class="github-button" target="_blank">
+                        <i class="bi bi-github"></i>
+                        View Source
+                    </a>
+                </div>
+            </div>
+            <div class="app-screenshots">
+                <div class="app-screenshot">
+                    <img src="img/pinboard/sc1.png" alt="PinBoard Screenshot 1">
+                </div>
+                <div class="app-screenshot">
+                    <img src="img/pinboard/sc2.png" alt="PinBoard Screenshot 2">
+                </div>
+                <div class="app-screenshot">
+                    <img src="img/pinboard/sc3.png" alt="PinBoard Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Features</h2>
+                <p>Keep your thoughts organized and beautiful.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-sticky"></i></div>
+                    <h3>Colorful Notes</h3>
+                    <p>Create vibrant sticky notes in a variety of colors to categorize and organize your thoughts visually.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-fonts"></i></div>
+                    <h3>Custom Fonts & Icons</h3>
+                    <p>Personalize each note with custom fonts, icons, and themes to match your style.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-activity"></i></div>
+                    <h3>Live Activities</h3>
+                    <p>Pin important notes to your Lock Screen and Dynamic Island for quick access anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-grid"></i></div>
+                    <h3>Home Screen Widgets</h3>
+                    <p>Glanceable widgets to keep your most important notes visible right on your Home Screen.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-palette"></i></div>
+                    <h3>Beautiful Design</h3>
+                    <p>A clean, polished interface built with SwiftUI that makes note-taking a joy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                    <h3>Privacy First</h3>
+                    <p>No accounts, no tracking, no data collection. Your notes stay private on your device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="policy-section">
+        <div class="container">
+            <div class="policy-card">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last updated:</strong> March 2026</p>
+                
+                <div class="policy-highlight">
+                    <i class="bi bi-shield-check"></i>
+                    <span>PinBoard does not collect, store, or share any personal data.</span>
+                </div>
+
+                <h3>Data Collection</h3>
+                <p>PinBoard is designed with your privacy as a priority. We do not collect any personal information from users. The app:</p>
+                <ul>
+                    <li>Does not require account creation or sign-in</li>
+                    <li>Does not collect or store personal data</li>
+                    <li>Does not track your usage or behavior</li>
+                    <li>Does not use analytics or third-party trackers</li>
+                    <li>Does not share any data with third parties</li>
+                </ul>
+
+                <h3>Your Notes</h3>
+                <p>All notes you create are stored locally on your device. This data:</p>
+                <ul>
+                    <li>Is stored entirely on your device</li>
+                    <li>Is never uploaded to any servers</li>
+                    <li>Is never shared with third parties</li>
+                    <li>Can be deleted at any time by removing the app</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                <p>PinBoard does not integrate any third-party analytics, advertising networks, or data collection services. Your note-taking experience is completely private.</p>
+
+                <h3>Changes to This Policy</h3>
+                <p>If we make any changes to this privacy policy, we will update this page. Since we don't collect any data, we have no way to notify users directly—but our commitment to privacy will remain unchanged.</p>
+
+                <h3>Contact</h3>
+                <p>If you have any questions about this privacy policy or PinBoard, please contact us at <a href="mailto:info@appsbyjosh.com">info@appsbyjosh.com</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="opensource-section">
+        <div class="container">
+            <div class="opensource-card">
+                <h2>Open Source</h2>
+                <p>PinBoard is open source and available on GitHub. We believe in transparency and community-driven development. Feel free to explore the code, report issues, or contribute.</p>
+                <div class="app-actions" style="justify-content: center;">
+                    <a href="https://github.com/JoshOn360Hz/PinBoard-App" class="github-button" target="_blank">
+                        <i class="bi bi-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support-section">
+        <div class="container">
+            <div class="support-card">
+                <h2>Support</h2>
+                <p>Need help with PinBoard? We're here for you.</p>
+                <div class="contact-info">
+                    <a href="mailto:info@appsbyjosh.com" class="contact-button">
+                        <i class="bi bi-envelope"></i>
+                        <span>Email Support</span>
+                    </a>
+                    <a href="https://github.com/JoshOn360Hz/PinBoardApp/issues" target="_blank" class="contact-button">
+                        <i class="bi bi-bug"></i>
+                        <span>Report Issue</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 PinBoard. <a href="#privacy">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

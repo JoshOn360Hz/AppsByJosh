@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments - Countdown</title>
+    <meta name="description" content="Moments is a simple app designed to use live activities and widgets to count down to what matters to you, built with SwiftUI and optimized for iOS.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="shortcut icon" href="/src/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Moments" />
+    <link rel="manifest" href="/src/site.webmanifest" />
+    <style>
+        .app-hero-standalone { padding: 4rem 0; }
+        .policy-card a { color: var(--accent); }
+        .policy-card a:hover { text-decoration: underline; }
+        .footer a { color: var(--muted); transition: color 0.2s ease; }
+        .footer a:hover { color: var(--text); }
+    </style>
+</head>
+<body>
+    <div class="container breadcrumb">
+        <a href="https://appsbyjosh.com" class="breadcrumb-link">
+            <i class="bi bi-chevron-left"></i>
+            AppsByJosh
+        </a>
+    </div>
+
+    <section class="app-hero app-hero-standalone">
+        <div class="container app-hero-layout">
+            <div class="app-hero-content">
+                <div class="app-hero-icon">
+                    <img src="img/moments.png" alt="Moments App Icon">
+                </div>
+                <h1 class="app-hero-title">Moments</h1>
+                <p class="app-hero-tagline">Count down to what matters most. Moments uses Live Activities and widgets to keep your important dates front and center, built with SwiftUI and optimized for iOS.</p>
+                <div class="app-badges">
+                    <span class="app-badge">SwiftUI</span>
+                    <span class="app-badge">Live Activities</span>
+                    <span class="app-badge">Widgets</span>
+                    <span class="app-badge">iOS</span>
+                </div>
+                <div class="app-actions">
+                    <a href="https://apps.apple.com/gb/app/moments-countdown/id6759080639" class="app-store-button">
+                        <i class="bi bi-apple"></i>
+                        Download on App Store
+                    </a>
+                    <a href="https://github.com/JoshOn360Hz/MomentsApp" class="github-button" target="_blank">
+                        <i class="bi bi-github"></i>
+                        View Source
+                    </a>
+                </div>
+            </div>
+            <div class="app-screenshots">
+                <div class="app-screenshot">
+                    <img src="img/moments/sc1.png" alt="Moments Screenshot 1">
+                </div>
+                <div class="app-screenshot">
+                    <img src="img/moments/sc2.png" alt="Moments Screenshot 2">
+                </div>
+                <div class="app-screenshot">
+                    <img src="img/moments/sc3.png" alt="Moments Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Features</h2>
+                <p>Never miss what matters most.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-hourglass-split"></i></div>
+                    <h3>Countdown Timers</h3>
+                    <p>Create beautiful countdowns for birthdays, holidays, vacations, or any event that matters to you.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-activity"></i></div>
+                    <h3>Live Activities</h3>
+                    <p>See your countdown right on your Lock Screen and Dynamic Island with real-time updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-grid"></i></div>
+                    <h3>Home Screen Widgets</h3>
+                    <p>Glanceable widgets in multiple sizes to keep your important dates visible at all times.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-calendar-event"></i></div>
+                    <h3>Multiple Events</h3>
+                    <p>Track as many countdowns as you need, from daily reminders to once-in-a-lifetime events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-palette"></i></div>
+                    <h3>Beautiful Design</h3>
+                    <p>A clean, elegant interface built with SwiftUI that makes tracking moments a joy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                    <h3>Privacy First</h3>
+                    <p>No accounts, no tracking, no data collection. Your moments stay private on your device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="policy-section">
+        <div class="container">
+            <div class="policy-card">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last updated:</strong> March 2026</p>
+                
+                <div class="policy-highlight">
+                    <i class="bi bi-shield-check"></i>
+                    <span>Moments does not collect, store, or share any personal data.</span>
+                </div>
+
+                <h3>Data Collection</h3>
+                <p>Moments is designed with your privacy as a priority. We do not collect any personal information from users. The app:</p>
+                <ul>
+                    <li>Does not require account creation or sign-in</li>
+                    <li>Does not collect or store personal data</li>
+                    <li>Does not track your usage or behavior</li>
+                    <li>Does not use analytics or third-party trackers</li>
+                    <li>Does not share any data with third parties</li>
+                </ul>
+
+                <h3>Your Countdowns</h3>
+                <p>All countdown events you create are stored locally on your device. This data:</p>
+                <ul>
+                    <li>Is stored entirely on your device</li>
+                    <li>Is never uploaded to any servers</li>
+                    <li>Is never shared with third parties</li>
+                    <li>Can be deleted at any time by removing the app</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                <p>Moments does not integrate any third-party analytics, advertising networks, or data collection services. Your countdown experience is completely private.</p>
+
+                <h3>Changes to This Policy</h3>
+                <p>If we make any changes to this privacy policy, we will update this page. Since we don't collect any data, we have no way to notify users directly—but our commitment to privacy will remain unchanged.</p>
+
+                <h3>Contact</h3>
+                <p>If you have any questions about this privacy policy or Moments, please contact us at <a href="mailto:feedback@appsbyjosh.com">info@appsbyjosh.com</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="opensource-section">
+        <div class="container">
+            <div class="opensource-card">
+                <h2>Open Source</h2>
+                <p>Moments is open source and available on GitHub. We believe in transparency. Feel free to explore the code, report issues, or contribute.</p>
+                <div class="app-actions" style="justify-content: center;">
+                    <a href="https://github.com/JoshOn360Hz/MomentsApp" class="github-button" target="_blank">
+                        <i class="bi bi-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support-section">
+        <div class="container">
+            <div class="support-card">
+                <h2>Support</h2>
+                <p>Need help with Moments? We're here for you.</p>
+                <div class="contact-info">
+                    <a href="mailto:info@appsbyjosh.com" class="contact-button">
+                        <i class="bi bi-envelope"></i>
+                        <span>Email Support</span>
+                    </a>
+                    <a href="https://github.com/JoshOn360Hz/MomentsApp/issues" target="_blank" class="contact-button">
+                        <i class="bi bi-bug"></i>
+                        <span>Report Issue</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Moments. <a href="#privacy">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

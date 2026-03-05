@@ -41,7 +41,8 @@ const appData = {
         description: 'FlipCards is your ultimate flashcard study companion, designed to revolutionize the way you learn and retain information. Create custom study sets, organize them by subject, and master any topic with interactive flashcards that adapt to your learning pace.',
         screenshots: ['img/flipcards/sc1.png', 'img/flipcards/sc2.png', 'img/flipcards/sc3.png'],
         appStoreUrl: 'https://apps.apple.com/gb/app/flipcards-revision-made-easy/id6749154468',
-        testFlightUrl: 'https://testflight.apple.com/join/2hBxWMNR'
+        testFlightUrl: 'https://testflight.apple.com/join/2hBxWMNR',
+        detailPageUrl: 'flipcards.html'
     },
     pulse: {
         icon: 'img/pulse.png',
@@ -49,7 +50,8 @@ const appData = {
         description: 'Pulse is a diagnostics app designed to help verify the core functionality of your iPhone,from buttons to sensors. Built with SwiftUI and with no data collection.',
         screenshots: ['img/pulse/sc1.png', 'img/pulse/sc2.png', 'img/pulse/sc3.png'],
         appStoreUrl: 'https://apps.apple.com/gb/app/pulse-mobile-diagnostics/id6757356341',
-        testFlightUrl: 'https://apps.apple.com/gb/app/pulse-mobile-diagnostics/id6757356341'
+        testFlightUrl: 'https://apps.apple.com/gb/app/pulse-mobile-diagnostics/id6757356341',
+        detailPageUrl: 'pulse.html'
     },
     moments: {
         icon: 'img/moments.png',
@@ -57,7 +59,8 @@ const appData = {
         description: 'Moments is a simple app designed to use live activites and widgets to count down to what matters to you, built with SwiftUI and optimized for iOS.',
         screenshots: ['img/moments/sc1.png', 'img/moments/sc2.png', 'img/moments/sc3.png'],
         appStoreUrl: 'https://apps.apple.com/gb/app/moments-countdown/id6759080639',
-        testFlightUrl: 'https://testflight.apple.com/join/a8gPamuc'
+        testFlightUrl: 'https://testflight.apple.com/join/a8gPamuc',
+        detailPageUrl: 'moments.html'
     }
 };
 
@@ -251,10 +254,27 @@ function initialize() {
     document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('click', closeMenu));
 
     appCards.forEach((card) => {
-        card.addEventListener('click', () => {
+        // Clicking the card navigates to the detail page
+        card.addEventListener('click', (event) => {
+            // Don't navigate if clicking the Learn More button
+            if (event.target.classList.contains('app-button')) return;
+            
             const appType = card.getAttribute('data-app');
-            if (appType) openModal(appType);
+            const app = appData[appType];
+            if (app && app.detailPageUrl) {
+                window.location.href = app.detailPageUrl;
+            }
         });
+        
+        // Learn More button opens the modal
+        const learnMoreBtn = card.querySelector('.app-button');
+        if (learnMoreBtn) {
+            learnMoreBtn.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const appType = card.getAttribute('data-app');
+                if (appType) openModal(appType);
+            });
+        }
     });
 
     if (modalClose) {
