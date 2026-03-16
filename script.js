@@ -26,6 +26,15 @@ const appData = {
         testFlightUrl: 'https://testflight.apple.com/join/zXMv5qHd',
         detailPageUrl: 'tailtag.html'
     },
+    latch: {
+        icon: 'img/latch.png',
+        title: 'Latch',
+        description: 'Latch is a local-first credential vault built with SwiftUI. It stores passwords and TOTP secrets in Apple Keychain, includes password generation and CSV import, and helps you review account security.',
+        screenshots: ['img/latch/sc1.png', 'img/latch/sc2.png', 'img/latch/sc3.png'],
+        appStoreUrl: 'https://testflight.apple.com/join/Zz9YuRC2',
+        testFlightUrl: 'https://testflight.apple.com/join/Zz9YuRC2',
+        detailPageUrl: 'latch.html'
+    },
     pinboard: {
         icon: 'img/pinboard.png',
         title: 'PinBoard - Better Notes',
