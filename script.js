@@ -70,6 +70,15 @@ const appData = {
         appStoreUrl: 'https://apps.apple.com/gb/app/moments-countdown/id6759080639',
         testFlightUrl: 'https://testflight.apple.com/join/a8gPamuc',
         detailPageUrl: 'moments.html'
+    },
+    uplink: {
+        icon: 'img/uplink.png',
+        title: 'UpLink',
+        description: 'UpLink is a real-time network engineering strategy game for iPhone and iPad. Build out your infrastructure, wire everything together following real networking rules, and survive an ever-growing wave of devices and traffic. Part city-builder, part tower defence, part puzzle, set inside a sleek cyberpunk world.',
+        screenshots: ['img/uplink/sc1.png', 'img/uplink/sc2.png', 'img/uplink/sc3.png'],
+        appStoreUrl: 'https://testflight.apple.com/join/kfQHX2bq',
+        testFlightUrl: 'https://testflight.apple.com/join/kfQHX2bq',
+        detailPageUrl: 'uplink.html'
     }
 };
 
